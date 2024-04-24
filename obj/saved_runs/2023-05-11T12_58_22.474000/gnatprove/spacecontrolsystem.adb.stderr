@@ -1,0 +1,4 @@
+spacecontrolsystem.adb:85:37: medium: overflow check might fail [reason for check: result of addition must fit in a 32-bits machine integer] [possible fix: subprogram at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+spacecontrolsystem.adb:86:22: medium: array index check might fail [reason for check: value must be a valid index into the array] [possible fix: subprogram at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#1]
+spacecontrolsystem.adb:90:27: medium: array index check might fail [reason for check: result of addition must be a valid index into the array][#2]
+spacecontrolsystem.adb:92:22: medium: array index check might fail [reason for check: value must be a valid index into the array] [possible fix: subprogram at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#3]

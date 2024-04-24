@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="6">
+<file format="gnat-json">
+<path name=".."/><path name="spacecontrolsystem__add_module_to_station.gnat-json"/>
+<theory name="Spacecontrolsystem__add_module_to_station__subprogram_def">
+ <goal name="def&#39;vc">
+ <transf name="split_goal_wp_conj" >
+  <goal name="def&#39;vc.0" proved="true">
+  <transf name="trivial_true" proved="true" >
+  </transf>
+  </goal>
+  <goal name="def&#39;vc.1">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>

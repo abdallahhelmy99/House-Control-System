@@ -1,0 +1,25 @@
+{
+  "spark": [
+    {
+      "name": "Main",
+      "sloc": [
+        {
+          "file": "main.adb",
+          "line": 7
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "globals (advanced)": 9.29019972681999E-03,
+    "flow analysis": 1.05699997220654E-04,
+    "marking": 6.51000009384006E-05,
+    "properties (advanced)": 2.49999993684469E-05,
+    "globals (basic)": 9.14849992841482E-03
+  }
+}

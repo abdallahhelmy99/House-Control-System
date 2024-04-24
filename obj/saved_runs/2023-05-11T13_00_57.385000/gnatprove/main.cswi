@@ -1,0 +1,7 @@
+20230511100056
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=D:\New folder (3)\obj\gnatprove\f97eeb1e.tmp

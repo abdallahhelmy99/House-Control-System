@@ -1,0 +1,2 @@
+spacecontrolsystem.adb:80:19: medium: array index check might fail [reason for check: value must be a valid index into the array] [possible fix: subprogram at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+spacecontrolsystem.adb:84:42: medium: array index check might fail [reason for check: result of addition must be a valid index into the array][#1]

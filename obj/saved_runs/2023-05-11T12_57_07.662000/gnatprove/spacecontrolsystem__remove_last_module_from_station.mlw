@@ -1,0 +1,157 @@
+module Standard__integer
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  
+  type integer = <range -2147483648 2147483647>
+  
+  val function first : int
+    ensures { result = ((- 2147483648) : int) }
+  
+  val function last : int
+    ensures { result = (2147483647 : int) }
+  
+  predicate in_range (x: int) = ((first <= x) /\ (x <= last))
+  
+  val in_range (x: int) : bool
+    ensures { result <-> (in_range (x : int)) }
+  
+  clone export ada__model.Static_Discrete with
+    axiom .,
+    type t = integer,
+    function first = first,
+    function last = last,
+    predicate in_range = in_range
+  
+  type integer__ref = { mutable integer__content : integer }
+  
+  function integer__ref_integer__content__projection (a: integer__ref) : integer =
+    a.integer__content
+  
+  meta "model_projection" function integer__ref_integer__content__projection
+  
+  meta "inline:no" function integer__ref_integer__content__projection
+  
+  val integer__havoc (x: integer__ref) : unit
+    writes { x }
+end
+
+module Standard__integer___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use Standard__integer as Standard__integer
+  
+  predicate dynamic_invariant (temp___expr_18: int) (temp___is_init_14: bool) (temp___skip_constant_15: bool) (temp___do_toplevel_16: bool) (temp___do_typ_inv_17: bool) =
+    if ((temp___is_init_14 = True) \/
+          (Standard__integer.first <= Standard__integer.last)) then
+      (((Standard__integer.dynamic_property Standard__integer.first)
+          Standard__integer.last)
+         temp___expr_18)
+    else true
+  
+  val dynamic_invariant (temp___expr_18: int) (temp___is_init_14: bool) (temp___skip_constant_15: bool) (temp___do_toplevel_16: bool) (temp___do_typ_inv_17: bool) : 
+    bool
+    ensures { result
+                <->
+                (((((dynamic_invariant (temp___expr_18 : int))
+                      (temp___is_init_14 : bool))
+                     (temp___skip_constant_15 : bool))
+                    (temp___do_toplevel_16 : bool))
+                   (temp___do_typ_inv_17 : bool)) }
+  
+  predicate default_initial_assumption (temp___expr_19: int) (temp___skip_top_level_20: bool) =
+    true
+  
+  val default_initial_assumption (temp___expr_19: int) (temp___skip_top_level_20: bool) : 
+    bool
+    ensures { result
+                <->
+                ((default_initial_assumption (temp___expr_19 : int))
+                   (temp___skip_top_level_20 : bool)) }
+end
+
+module Spacecontrolsystem__num_modules
+  use _gnatprove_standard.Main
+  use int.Int
+  
+  val num_modules : int__ref
+end
+
+module Spacecontrolsystem__num_modules___axiom
+  use _gnatprove_standard.Main
+  use int.Int
+end
+
+module Spacecontrolsystem__remove_last_module_from_station__subprogram_def
+  use _gnatprove_standard.Main
+  use int.Int
+  use int.Int
+  use _gnatprove_standard.Main as Main
+  use Standard__integer as Standard__integer
+  use Standard__integer___axiom as Standard__integer___axiom
+  use Spacecontrolsystem__num_modules as Spacecontrolsystem__num_modules
+  use Standard__integer___axiom as Standard__integer___axiom
+  use Standard__integer___axiom as Standard__integer___axiom
+  use Spacecontrolsystem__num_modules___axiom as Spacecontrolsystem__num_modules___axiom
+  
+  let def (__void_param : unit)
+    requires { [#"spacecontrolsystem.ads" 53 0 0] true }
+  = [@vc:divergent]
+    (([@GNAT-comment:Assume dynamic invariants of inputs of the subprogram spacecontrolsystem.ads:53]
+      ());
+     ([#"spacecontrolsystem.ads" 53 0 0]
+      assume {
+        [#"spacecontrolsystem.ads" 53 0 0]
+        (((((Standard__integer___axiom.dynamic_invariant
+               (Spacecontrolsystem__num_modules.num_modules.int__content))
+              True)
+             False)
+            True)
+           True) });
+     ([@GNAT-comment:Assume moved pointers in outputs of the subprogram spacecontrolsystem.ads:53]
+      ());
+     ([@GNAT-comment:Check for RTE in the Pre of the subprogram spacecontrolsystem.ads:53]
+      ());
+     ([#"spacecontrolsystem.ads" 53 0 0] ());
+     ([@GNAT-comment:Assume Pre of the subprogram spacecontrolsystem.ads:53]
+      ());
+     ([#"spacecontrolsystem.ads" 53 0 0]
+      (try
+         ([@GP_Sloc:spacecontrolsystem.adb:102:10]
+          [#"spacecontrolsystem.adb" 102 0 0] ());
+         ([@GP_Sloc:spacecontrolsystem.adb:102:7]
+          [#"spacecontrolsystem.adb" 102 0 0]
+          (if (([#"spacecontrolsystem.adb" 102 0 0]
+                [#"spacecontrolsystem.adb" 102 0 0]
+                (([@branch_id=980] Main.spark__branch).bool__content <-
+                   ((Spacecontrolsystem__num_modules.num_modules.int__content)
+                      > (0 : int))));
+               (([@branch_id=980] Main.spark__branch).bool__content)) then
+             (([@GP_Sloc:spacecontrolsystem.adb:103:10]
+               [#"spacecontrolsystem.adb" 103 0 0] ());
+              ([@GP_Sloc:spacecontrolsystem.adb:103:25]
+               [#"spacecontrolsystem.adb" 103 0 0] ());
+              ([@GP_Sloc:spacecontrolsystem.adb:103:22]
+               [#"spacecontrolsystem.adb" 103 0 0]
+               [#"spacecontrolsystem.adb" 103 0 0]
+               (Spacecontrolsystem__num_modules.num_modules.int__content <-
+                  ([#"spacecontrolsystem.adb" 103 0 0]
+                   [@vc:annotation]
+                   [@GP_Reason:VC_OVERFLOW_CHECK]
+                   [@GP_Sloc:spacecontrolsystem.adb:103:37]
+                   [@GP_Shape:if__num_modules_assign__sub]
+                   [@comment:         Num_Modules := Num_Modules - 1;                                     ^ spacecontrolsystem.adb:103:37:VC_OVERFLOW_CHECK]
+                   [@GP_Id:9]
+                   (Standard__integer.range_check_
+                      ((Spacecontrolsystem__num_modules.num_modules.int__content)
+                         - (1 : int)))))))
+           else
+             ([@GP_Sloc:spacecontrolsystem.adb:105:10]
+              [#"spacecontrolsystem.adb" 105 0 0]
+              [#"spacecontrolsystem.adb" 105 0 0]
+              ((raise Return__exc) : unit))));
+         (raise Return__exc)
+       with Return__exc -> ()
+       end)))
+end

@@ -1,0 +1,60 @@
+{
+  "spark": [
+    {
+      "name": "Spacecontrolsystem.Open_Airlock_Door_1",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 44
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "session_map": {
+  },
+  "proof": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 506
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Open_Airlock_Door_1",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 44
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "codepeer results": 1.12539995461702E-03,
+    "init_why_sections": 5.49799995496869E-04,
+    "globals (advanced)": 8.22540000081062E-03,
+    "flow analysis": 9.62799997068942E-04,
+    "marking": 1.41700002131984E-04,
+    "translation of standard": 2.79400008730590E-03,
+    "properties (advanced)": 4.23999990744051E-05,
+    "globals (basic)": 9.27400030195713E-03
+  }
+}

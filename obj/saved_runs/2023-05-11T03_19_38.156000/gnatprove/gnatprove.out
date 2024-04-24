@@ -1,0 +1,37 @@
+Summary of SPARK analysis
+=========================
+
+-----------------------------------------------------------------------------------------
+SPARK Analysis results        Total      Flow   CodePeer   Provers   Justified   Unproved
+-----------------------------------------------------------------------------------------
+Data Dependencies                 .         .          .         .           .          .
+Flow Dependencies                 .         .          .         .           .          .
+Initialization                    .         .          .         .           .          .
+Non-Aliasing                      .         .          .         .           .          .
+Run-time Checks                   .         .          .         .           .          .
+Assertions                        .         .          .         .           .          .
+Functional Contracts              .         .          .         .           .          .
+LSP Verification                  .         .          .         .           .          .
+Termination                       .         .          .         .           .          .
+Concurrency                       .         .          .         .           .          .
+-----------------------------------------------------------------------------------------
+Total                             .         .          .         .           .          .
+
+
+max steps used for successful proof: 0
+
+Analyzed 1 unit
+in unit spacecontrolsystem, 13 subprograms and packages out of 13 analyzed
+  Spacecontrolsystem at spacecontrolsystem.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem."and" at spacecontrolsystem.adb:128 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.Add_Module_To_Station at spacecontrolsystem.ads:51 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.Adjust_Station_Distance_From_Earth at spacecontrolsystem.ads:48 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.Both_Doors_Closed at spacecontrolsystem.ads:49 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.Both_Doors_Open at spacecontrolsystem.ads:50 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.Close_Airlock_Door_1 at spacecontrolsystem.ads:46 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.Close_Airlock_Door_2 at spacecontrolsystem.ads:47 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.End_EVA at spacecontrolsystem.ads:53 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.Open_Airlock_Door_1 at spacecontrolsystem.ads:44 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.Open_Airlock_Door_2 at spacecontrolsystem.ads:45 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.Remove_Last_Module_From_Station at spacecontrolsystem.ads:52 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Spacecontrolsystem.Start_Space_Walk at spacecontrolsystem.ads:55 flow analyzed (0 errors, 0 checks and 0 warnings)

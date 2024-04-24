@@ -1,0 +1,41 @@
+{
+  "spark": [
+    {
+      "name": "Spacecontrolsystem.Add_Module_To_Station",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 51
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Add_Module_To_Station",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 51
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "globals (advanced)": 8.51080007851124E-03,
+    "flow analysis": 1.47539994213730E-03,
+    "marking": 1.69599996297620E-04,
+    "properties (advanced)": 3.70999987353571E-05,
+    "globals (basic)": 1.00362002849579E-02
+  }
+}

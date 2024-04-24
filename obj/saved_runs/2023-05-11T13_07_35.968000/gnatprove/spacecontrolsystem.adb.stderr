@@ -1,0 +1,1 @@
+spacecontrolsystem.adb:86:22: medium: array index check might fail [reason for check: value must be a valid index into the array][#0]

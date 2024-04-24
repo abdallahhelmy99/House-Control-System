@@ -1,0 +1,978 @@
+(* Module for axiomatizing type "integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type integer  = <range -2147483648 2147483647>
+  
+  function   first () requires { True } ensures  { True } returns
+    int = -2147483648
+  
+  function   last () requires { True } ensures  { True } returns
+    int = 2147483647
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = integer,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type integer__ref  = { mutable integer__content : integer }
+  
+  function   integer__ref_integer__content__projection (a : integer__ref)
+    requires {  } ensures  {  } returns integer = a.integer__content
+  
+  meta model_projection function integer__ref_integer__content__projection
+  
+  meta inline:no function integer__ref_integer__content__projection
+  
+  function   integer__havoc (x : integer__ref) requires {  } ensures  {  }
+    returns unit
+
+end
+
+(* Module giving axioms for type "integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Standard__integer
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_18) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_14) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_15) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_16) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_17) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_14) = True) \/
+          (Standard__integer.first <= Standard__integer.last))
+       then
+       (Standard__integer.dynamic_property Standard__integer.first
+          Standard__integer.last ([mlw:proxy_symbol]
+          [introduced] temp___expr_18))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_19) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_20) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module for defining a ref holding the value of variable "num_modules" defined at spacecontrolsystem.ads:26, created in Gnat2Why.Decls.Translate_Variable *)
+module Spacecontrolsystem__num_modules
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  val num_modules [model_projected] [name:Num_Modules]
+  [model_trace:1212] [sloc:spacecontrolsystem.ads:26]: int
+
+end
+
+(* Module defining to_rep/of_rep for type "integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer__rep
+  
+  use        Standard__integer
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function   to_rep (x : Standard__integer.integer) requires { True }
+    ensures  { True } returns int = (Standard__integer.integer'int x)
+  
+  clone export ada__model.Rep_Proj_Int with axiom . type t = Standard__integer.integer,
+    predicate in_range = Standard__integer.in_range, function to_rep = to_rep
+  
+  meta model_projection function to_rep
+  
+  meta inline:no function to_rep
+
+end
+
+(* Module for axiomatizing type "float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__float
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        _gnatprove_standard.Float32
+  
+  type float__  
+  
+  function   first () requires { True } ensures  { True } returns
+    _gnatprove_standard.Float32.t = -16777215/-26b16
+  
+  function   last () requires { True } ensures  { True } returns
+    _gnatprove_standard.Float32.t = +16777215/-26b16
+  
+  function   in_range (x : _gnatprove_standard.Float32.t) requires { True }
+    ensures  { True } returns  = (_gnatprove_standard.Float32.t'isFinite x)
+  
+  clone export ada__model.Static_Float32 with axiom . type t = float__,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type float____ref  = { mutable float____content : float__ }
+  
+  function   float____ref_float____content__projection (a : float____ref)
+    requires {  } ensures  {  } returns float__ = a.float____content
+  
+  meta model_projection function float____ref_float____content__projection
+  
+  meta inline:no function float____ref_float____content__projection
+  
+  function   float____havoc (x : float____ref) requires {  } ensures  {  }
+    returns unit
+
+end
+
+(* Module defining to_rep/of_rep for type "float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__float__rep
+  
+  use        Standard__float
+  use        _gnatprove_standard.Float32
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  clone export ada__model.Rep_Proj_Float32 with axiom . type t = Standard__float.float__,
+    predicate in_range = Standard__float.in_range
+  
+  meta model_projection function to_rep
+  
+  meta inline:no function to_rep
+
+end
+
+(* Module for axiomatizing type "module_type" defined at spacecontrolsystem.ads:18, created in Gnat2Why.Types.Translate_Type *)
+module Spacecontrolsystem__module_type
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type module_type  
+  
+  function   first () requires { True } ensures  { True } returns int = 0
+  
+  function   last () requires { True } ensures  { True } returns int = 3
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = module_type,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type module_type__ref  = { mutable module_type__content : module_type }
+  
+  function   module_type__ref_module_type__content__projection
+    (a : module_type__ref) requires {  } ensures  {  } returns
+    module_type = a.module_type__content
+  
+  meta model_projection function module_type__ref_module_type__content__projection
+  
+  meta inline:no function module_type__ref_module_type__content__projection
+  
+  function   module_type__havoc (x : module_type__ref) requires {  } ensures 
+    {  } returns unit
+
+end
+
+(* Module defining to_rep/of_rep for type "module_type" defined at spacecontrolsystem.ads:18, created in Gnat2Why.Types.Translate_Type *)
+module Spacecontrolsystem__module_type__rep
+  
+  use        Spacecontrolsystem__module_type
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  clone export ada__model.Rep_Proj_Int with axiom . type t = Spacecontrolsystem__module_type.module_type,
+    predicate in_range = Spacecontrolsystem__module_type.in_range
+  
+  meta model_projection function to_rep
+  
+  meta inline:no function to_rep
+
+end
+
+(* Module for axiomatizing the record theory associated to type "module_record" defined at spacecontrolsystem.ads:19, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
+module Spacecontrolsystem__module_record__rep
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        _gnatprove_standard.Float32
+  use        Standard__integer
+  use        Standard__integer__rep
+  use        Standard__float
+  use        Standard__float__rep
+  use        Spacecontrolsystem__module_type
+  use        Spacecontrolsystem__module_type__rep
+  
+  type __split_fields  = { [model_trace:.1189]
+                           [name:class]rec__spacecontrolsystem__module_record__class : Spacecontrolsystem__module_type.module_type;
+                           [model_trace:.1194]
+                           [name:ID]rec__spacecontrolsystem__module_record__id : Standard__integer.integer;
+                           [model_trace:.1198]
+                           [name:Mass]rec__spacecontrolsystem__module_record__mass : Standard__float.float__ }
+  
+  function [model_trace:.1189] [name:class] 
+    __split_fields_rec__spacecontrolsystem__module_record__class__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    Spacecontrolsystem__module_type.module_type = a.rec__spacecontrolsystem__module_record__class
+  
+  meta model_projection function __split_fields_rec__spacecontrolsystem__module_record__class__projection
+  
+  meta inline:no function __split_fields_rec__spacecontrolsystem__module_record__class__projection
+  
+  function [model_trace:.1194] [name:ID] 
+    __split_fields_rec__spacecontrolsystem__module_record__id__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    Standard__integer.integer = a.rec__spacecontrolsystem__module_record__id
+  
+  meta model_projection function __split_fields_rec__spacecontrolsystem__module_record__id__projection
+  
+  meta inline:no function __split_fields_rec__spacecontrolsystem__module_record__id__projection
+  
+  function [model_trace:.1198] [name:Mass] 
+    __split_fields_rec__spacecontrolsystem__module_record__mass__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    Standard__float.float__ = a.rec__spacecontrolsystem__module_record__mass
+  
+  meta model_projection function __split_fields_rec__spacecontrolsystem__module_record__mass__projection
+  
+  meta inline:no function __split_fields_rec__spacecontrolsystem__module_record__mass__projection
+  
+  type __split_fields__ref  = { mutable __split_fields__content : __split_fields }
+  
+  function   __split_fields__ref___split_fields__content__projection
+    (a : __split_fields__ref) requires {  } ensures  {  } returns
+    __split_fields = a.__split_fields__content
+  
+  meta model_projection function __split_fields__ref___split_fields__content__projection
+  
+  meta inline:no function __split_fields__ref___split_fields__content__projection
+  
+  function   __split_fields__havoc (x : __split_fields__ref) requires {  }
+    ensures  {  } returns unit
+  
+  type __rep  = { __split_fields : __split_fields }
+  
+  function   __rep___split_fields__projection (a : __rep) requires {  }
+    ensures  {  } returns __split_fields = a.__split_fields
+  
+  meta model_projection function __rep___split_fields__projection
+  
+  meta inline:no function __rep___split_fields__projection
+  
+  function   to_base (a : __rep) requires { True } ensures  { True } returns
+    __rep = a
+  
+  function   of_base (a : __rep) requires { True } ensures  { True } returns
+    __rep = a
+  
+  function   spacecontrolsystem__module_record__class__pred (a : __rep)
+    requires { True } ensures  { True } returns  = True
+  
+  function   rec__spacecontrolsystem__module_record__class_ (a : __rep)
+    requires { (spacecontrolsystem__module_record__class__pred a) } ensures 
+    { (result
+         = a.__split_fields.rec__spacecontrolsystem__module_record__class) }
+    returns Spacecontrolsystem__module_type.module_type
+  
+  function   spacecontrolsystem__module_record__id__pred (a : __rep) requires
+    { True } ensures  { True } returns  = True
+  
+  function   rec__spacecontrolsystem__module_record__id_ (a : __rep) requires
+    { (spacecontrolsystem__module_record__id__pred a) } ensures 
+    { (result = a.__split_fields.rec__spacecontrolsystem__module_record__id) }
+    returns Standard__integer.integer
+  
+  function   spacecontrolsystem__module_record__mass__pred (a : __rep)
+    requires { True } ensures  { True } returns  = True
+  
+  function   rec__spacecontrolsystem__module_record__mass_ (a : __rep)
+    requires { (spacecontrolsystem__module_record__mass__pred a) } ensures 
+    { (result = a.__split_fields.rec__spacecontrolsystem__module_record__mass) }
+    returns Standard__float.float__
+  
+  function   bool_eq (a : __rep b : __rep) requires { True } ensures 
+    { True } returns
+    bool = (if
+           (((Spacecontrolsystem__module_type__rep.to_rep
+                a.__split_fields.rec__spacecontrolsystem__module_record__class)
+               = (Spacecontrolsystem__module_type__rep.to_rep
+                    b.__split_fields.rec__spacecontrolsystem__module_record__class))
+              /\
+              ((Standard__integer__rep.to_rep
+                  a.__split_fields.rec__spacecontrolsystem__module_record__id)
+                 = (Standard__integer__rep.to_rep
+                      b.__split_fields.rec__spacecontrolsystem__module_record__id))
+              /\
+              (_gnatprove_standard.Float32.eq
+                 (Standard__float__rep.to_rep
+                    a.__split_fields.rec__spacecontrolsystem__module_record__mass)
+                 (Standard__float__rep.to_rep
+                    b.__split_fields.rec__spacecontrolsystem__module_record__mass)))
+           then True  else False)
+
+end
+
+(* Module for axiomatizing type "module_record" defined at spacecontrolsystem.ads:19, created in Gnat2Why.Types.Translate_Type *)
+module Spacecontrolsystem__module_record
+  
+  use export Spacecontrolsystem__module_record__rep
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type module_record  = --pp_transparent_type_definition NOT IMPLEMENTED
+  
+  function   value__size () requires {  } ensures  {  } returns int
+  
+  function   object__size () requires {  } ensures  {  } returns int
+  
+  function   alignment () requires {  } ensures  {  } returns int
+  
+  axiom value__size_axiom : ((value__size ) >= 0)
+  
+  axiom object__size_axiom : ((object__size ) >= 0)
+  
+  axiom alignment_axiom : ((alignment ) >= 0)
+  
+  function   spacecontrolsystem__module_record__class__first__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacecontrolsystem__module_record__class__last__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacecontrolsystem__module_record__class__position () requires
+    {  } ensures  {  } returns int
+  
+  axiom spacecontrolsystem__module_record__class__first__bit_axiom : 
+  ((spacecontrolsystem__module_record__class__first__bit ) >= 0)
+  
+  axiom spacecontrolsystem__module_record__class__last__bit_axiom : ((spacecontrolsystem__module_record__class__last__bit
+                                                                    )
+                                                                    > (spacecontrolsystem__module_record__class__first__bit
+                                                                    ))
+  
+  axiom spacecontrolsystem__module_record__class__position_axiom : ((spacecontrolsystem__module_record__class__position
+                                                                    ) >= 0)
+  
+  function   spacecontrolsystem__module_record__id__first__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacecontrolsystem__module_record__id__last__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacecontrolsystem__module_record__id__position () requires {  }
+    ensures  {  } returns int
+  
+  axiom spacecontrolsystem__module_record__id__first__bit_axiom : ((spacecontrolsystem__module_record__id__first__bit
+                                                                    ) >= 0)
+  
+  axiom spacecontrolsystem__module_record__id__last__bit_axiom : ((spacecontrolsystem__module_record__id__last__bit
+                                                                    )
+                                                                    > (
+                                                                    spacecontrolsystem__module_record__id__first__bit
+                                                                    ))
+  
+  axiom spacecontrolsystem__module_record__id__position_axiom : ((spacecontrolsystem__module_record__id__position
+                                                                    ) >= 0)
+  
+  function   spacecontrolsystem__module_record__mass__first__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacecontrolsystem__module_record__mass__last__bit () requires
+    {  } ensures  {  } returns int
+  
+  function   spacecontrolsystem__module_record__mass__position () requires
+    {  } ensures  {  } returns int
+  
+  axiom spacecontrolsystem__module_record__mass__first__bit_axiom : ((spacecontrolsystem__module_record__mass__first__bit
+                                                                    ) >= 0)
+  
+  axiom spacecontrolsystem__module_record__mass__last__bit_axiom : ((spacecontrolsystem__module_record__mass__last__bit
+                                                                    )
+                                                                    > (
+                                                                    spacecontrolsystem__module_record__mass__first__bit
+                                                                    ))
+  
+  axiom spacecontrolsystem__module_record__mass__position_axiom : ((spacecontrolsystem__module_record__mass__position
+                                                                    ) >= 0)
+  
+  function   user_eq (a : module_record b : module_record) requires { True }
+    ensures  { True } returns bool
+  
+  function   dummy () requires {  } ensures  {  } returns module_record
+  
+  type module_record__ref  = { mutable module_record__content : module_record }
+  
+  function   module_record__ref_module_record__content__projection
+    (a : module_record__ref) requires {  } ensures  {  } returns
+    module_record = a.module_record__content
+  
+  meta model_projection function module_record__ref_module_record__content__projection
+  
+  meta inline:no function module_record__ref_module_record__content__projection
+  
+  function   module_record__havoc (x : module_record__ref) requires {  }
+    ensures  {  } returns unit
+
+end
+
+(* Module for axiomatizing the array theory associated to type "Tmodule_arrayB" defined at spacecontrolsystem.ads:25, created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+module Array__Int__Spacecontrolsystem__module_record
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacecontrolsystem__module_record
+  
+  function   index_I1_one () requires { True } ensures  { True } returns
+    int = 1
+  
+  type component_type  = --pp_transparent_type_definition NOT IMPLEMENTED
+  
+  clone export _gnatprove_standard.Array__1 with axiom . type I1.t = int,
+    predicate I1.le = <=, predicate I1.lt = <, predicate I1.gt = >,
+    function I1.add = +, function I1.sub = -, function I1.one = index_I1_one,
+    type component_type = component_type
+  
+  function   bool_eq
+    (a : map a__first : int a__last : int b : map b__first : int
+    b__last : int) requires { True } ensures  { True } returns
+    bool = ((if (a__first <= a__last) then
+            ((b__first <= b__last) /\
+               ((a__last - a__first) = (b__last - b__first)))
+             else (b__first > b__last)) /\
+              --pp_universal_quantif NOT IMPLEMENTED)
+  
+  axiom bool_eq_rev : --pp_universal_quantif NOT IMPLEMENTED
+
+end
+
+(* Module for defining a ref holding the value of variable "module_list" defined at spacecontrolsystem.ads:27, created in Gnat2Why.Decls.Translate_Variable *)
+module Spacecontrolsystem__module_list
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Array__Int__Spacecontrolsystem__module_record
+  
+  val module_list [model_projected] [name:Module_List]
+  [model_trace:1216] [sloc:spacecontrolsystem.ads:27]: Array__Int__Spacecontrolsystem__module_record.map
+
+end
+
+(* Module for defining the constant "new_module" defined at spacecontrolsystem.ads:51, created in Gnat2Why.Decls.Translate_Constant *)
+module Spacecontrolsystem__add_module_to_station__new_module
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Spacecontrolsystem__module_record
+  
+  function [name:New_Module] [model_trace:1292] [model_projected]
+    [sloc:spacecontrolsystem.ads:51] new_module () requires {  } ensures 
+    {  } returns Spacecontrolsystem__module_record.module_record
+
+end
+
+(* Module for defining a ref holding the value of variable "i" defined at spacecontrolsystem.adb:89, created in Gnat2Why.Decls.Translate_Variable *)
+module Spacecontrolsystem__add_module_to_station__L_1__i
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  val i [name:i] [model_projected]
+  [model_trace:956] [sloc:spacecontrolsystem.adb:89]: int
+
+end
+
+(* Module giving axioms for type "module_record" defined at spacecontrolsystem.ads:19, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Spacecontrolsystem__module_record___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Spacecontrolsystem__module_record
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_194) : Spacecontrolsystem__module_record.module_record
+    ([mlw:proxy_symbol] [introduced] temp___is_init_190) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_191) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_192) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_193) : bool) requires
+    { True } ensures  { True } returns  = True
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_195) : Spacecontrolsystem__module_record.module_record
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_196) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module for axiomatizing type "Tmodule_arrayD1" defined at spacecontrolsystem.ads:25, created in Gnat2Why.Types.Translate_Type *)
+module Spacecontrolsystem__Tmodule_arrayD1
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type tmodule_arrayD1  = <range 1 100>
+  
+  function   first () requires { True } ensures  { True } returns int = 1
+  
+  function   last () requires { True } ensures  { True } returns int = 100
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = tmodule_arrayD1,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type tmodule_arrayD1__ref  = { mutable tmodule_arrayD1__content : tmodule_arrayD1 }
+  
+  function   tmodule_arrayD1__ref_tmodule_arrayD1__content__projection
+    (a : tmodule_arrayD1__ref) requires {  } ensures  {  } returns
+    tmodule_arrayD1 = a.tmodule_arrayD1__content
+  
+  meta model_projection function tmodule_arrayD1__ref_tmodule_arrayD1__content__projection
+  
+  meta inline:no function tmodule_arrayD1__ref_tmodule_arrayD1__content__projection
+  
+  function   tmodule_arrayD1__havoc (x : tmodule_arrayD1__ref) requires {  }
+    ensures  {  } returns unit
+
+end
+
+(* Module giving axioms for type "module_array" defined at spacecontrolsystem.ads:25, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Spacecontrolsystem__module_array___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Array__Int__Spacecontrolsystem__module_record
+  use        Array__Int__Spacecontrolsystem__module_record
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_204) : Array__Int__Spacecontrolsystem__module_record.map
+    ([mlw:proxy_symbol] [introduced] temp___is_init_200) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_201) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_202) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_203) : bool) requires
+    { True } ensures  { True } returns  = True
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_206) : Array__Int__Spacecontrolsystem__module_record.map
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_207) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module for defining the loop exit exception for the loop "L_1" defined at spacecontrolsystem.adb:89, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+module Spacecontrolsystem__add_module_to_station__L_1
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  --pp_exception_declaration NOT IMPLEMENTED
+
+end
+
+(* Module giving axioms for type "float", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__float___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        _gnatprove_standard.Float32
+  use        Standard__float
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_67) : _gnatprove_standard.Float32.t
+    ([mlw:proxy_symbol] [introduced] temp___is_init_63) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_64) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_65) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_66) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_63) = True) \/
+          (_gnatprove_standard.Float32.le Standard__float.first
+             Standard__float.last))
+       then
+       (Standard__float.dynamic_property Standard__float.first
+          Standard__float.last ([mlw:proxy_symbol]
+          [introduced] temp___expr_67))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_68) : _gnatprove_standard.Float32.t
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_69) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving an empty axiom for the entity "i" defined at spacecontrolsystem.adb:89, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Spacecontrolsystem__add_module_to_station__L_1__i___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module giving an empty axiom for the entity "L_1" defined at spacecontrolsystem.adb:89, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Spacecontrolsystem__add_module_to_station__L_1___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module giving axioms for type "module_type" defined at spacecontrolsystem.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Spacecontrolsystem__module_type___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Spacecontrolsystem__module_type
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_187) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_183) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_184) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_185) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_186) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_183) = True) \/
+          (Spacecontrolsystem__module_type.first
+             <= Spacecontrolsystem__module_type.last))
+       then
+       (Spacecontrolsystem__module_type.dynamic_property
+          Spacecontrolsystem__module_type.first
+          Spacecontrolsystem__module_type.last ([mlw:proxy_symbol]
+          [introduced] temp___expr_187))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_188) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_189) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving an empty axiom for the entity "num_modules" defined at spacecontrolsystem.ads:26, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Spacecontrolsystem__num_modules___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module giving an empty axiom for the entity "module_list" defined at spacecontrolsystem.ads:27, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Spacecontrolsystem__module_list___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module giving an empty axiom for the entity "new_module" defined at spacecontrolsystem.ads:51, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Spacecontrolsystem__add_module_to_station__new_module___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module giving axioms for type "Tmodule_arrayD1" defined at spacecontrolsystem.ads:25, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Spacecontrolsystem__Tmodule_arrayD1___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "add_module_to_station" defined at spacecontrolsystem.ads:51, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Spacecontrolsystem__add_module_to_station__subprogram_def
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        _gnatprove_standard.Main
+  use        _gnatprove_standard.Boolean
+  use        Standard__integer
+  use        Standard__integer___axiom
+  use        Spacecontrolsystem__num_modules
+  use        Array__Int__Spacecontrolsystem__module_record
+  use        Spacecontrolsystem__module_list
+  use        Spacecontrolsystem__module_record
+  use        Spacecontrolsystem__add_module_to_station__new_module
+  use        Spacecontrolsystem__add_module_to_station__L_1__i
+  use        Spacecontrolsystem__module_record___axiom
+  use        Spacecontrolsystem__Tmodule_arrayD1
+  use        Array__Int__Spacecontrolsystem__module_record
+  use        Spacecontrolsystem__module_array___axiom
+  use        Spacecontrolsystem__add_module_to_station__L_1
+  use        Standard__integer___axiom
+  use        Standard__float___axiom
+  use        Standard__integer___axiom
+  use        Spacecontrolsystem__add_module_to_station__L_1__i___axiom
+  use        Spacecontrolsystem__add_module_to_station__L_1___axiom
+  use        Spacecontrolsystem__module_type___axiom
+  use        Spacecontrolsystem__module_record___axiom
+  use        Spacecontrolsystem__module_array___axiom
+  use        Spacecontrolsystem__num_modules___axiom
+  use        Spacecontrolsystem__module_list___axiom
+  use        Spacecontrolsystem__add_module_to_station__new_module___axiom
+  use        Spacecontrolsystem__Tmodule_arrayD1___axiom
+  
+  function [GP_Subp:spacecontrolsystem.ads:51]
+    [sloc:spacecontrolsystem.ads:51] def (__void_param : unit) requires
+    { True } ensures  {  } returns
+     = (* Assume dynamic invariants of inputs of the subprogram spacecontrolsystem.ads:51 *);
+        assume
+        { (Standard__integer___axiom.dynamic_invariant
+             !Spacecontrolsystem__num_modules.num_modules True False True
+             True) };
+        assume
+        { (Spacecontrolsystem__module_array___axiom.dynamic_invariant
+             !Spacecontrolsystem__module_list.module_list True False True
+             True) };
+        assume
+        { (Spacecontrolsystem__module_record___axiom.dynamic_invariant
+             Spacecontrolsystem__add_module_to_station__new_module.new_module
+             True False True True) };
+        (* Assume moved pointers in outputs of the subprogram spacecontrolsystem.ads:51 *);
+        (* Check for RTE in the Pre of the subprogram spacecontrolsystem.ads:51 *);
+        abstract ensures
+        { True } begin  (let _ =
+                       (!Spacecontrolsystem__num_modules.num_modules < 100)
+                       in ())  end;
+        (* Assume Pre of the subprogram spacecontrolsystem.ads:51 *);
+        assume
+        { ([GP_Pretty_Ada:12120] (!Spacecontrolsystem__num_modules.num_modules
+                                    < 100)) };
+        (try
+        ();
+          ([sloc:spacecontrolsystem.adb:89] ());
+          ();
+          ([GP_Sloc:spacecontrolsystem.adb:84:10] ([sloc:spacecontrolsystem.adb:84] ()));
+          ([GP_Sloc:spacecontrolsystem.adb:84:7] ([sloc:spacecontrolsystem.adb:84] 
+                                                 (if
+                                                 ([sloc:spacecontrolsystem.adb:84] ([branch_id=934]
+                                                 _gnatprove_standard.Main.spark__branch
+                                                 :=
+                                                 (!Spacecontrolsystem__num_modules.num_modules
+                                                    < 100)));
+                                                 ([branch_id=934] _gnatprove_standard.Main.spark__branch).bool__content
+                                                 then
+                                                 ();
+                                                 ([GP_Sloc:spacecontrolsystem.adb:85:10] 
+                                                 ([sloc:spacecontrolsystem.adb:85] ()));
+                                                 ([GP_Sloc:spacecontrolsystem.adb:85:25] 
+                                                 ([sloc:spacecontrolsystem.adb:85] ()));
+                                                 ([GP_Sloc:spacecontrolsystem.adb:85:22] 
+                                                 ([sloc:spacecontrolsystem.adb:85] (
+                                                 Spacecontrolsystem__num_modules.num_modules
+                                                 :=
+                                                 ( ([sloc:spacecontrolsystem.adb:85] 
+                                                   ([comment:         Num_Modules := Num_Modules + 1;                                     ^ spacecontrolsystem.adb:85:37:VC_OVERFLOW_CHECK]
+                                                   [vc:annotation]
+                                                   [GP_Reason:VC_OVERFLOW_CHECK]
+                                                   [GP_Shape:if__num_modules_assign__add]
+                                                   [GP_Id:2]
+                                                   [GP_Sloc:spacecontrolsystem.adb:85:37] (
+                                                   Standard__integer.range_check_
+                                                     (!Spacecontrolsystem__num_modules.num_modules
+                                                        + 1))))))));
+                                                 ([GP_Sloc:spacecontrolsystem.adb:86:10] 
+                                                 ([sloc:spacecontrolsystem.adb:86] ()));
+                                                 ([GP_Sloc:spacecontrolsystem.adb:86:22] 
+                                                 ([sloc:spacecontrolsystem.adb:86] ()));
+                                                 ([GP_Sloc:spacecontrolsystem.adb:86:42] 
+                                                 ([sloc:spacecontrolsystem.adb:86] ()));
+                                                 ([GP_Sloc:spacecontrolsystem.adb:86:59] 
+                                                 ([sloc:spacecontrolsystem.adb:86] (
+                                                 Spacecontrolsystem__module_list.module_list
+                                                 :=
+                                                 (Array__Int__Spacecontrolsystem__module_record.set
+                                                    !Spacecontrolsystem__module_list.module_list
+                                                    (let ([mlw:proxy_symbol]
+                                                    [introduced] temp___273)
+                                                    =
+                                                    ([sloc:spacecontrolsystem.adb:86] 
+                                                    ([GP_Shape:if__module_list_assign__ixdcomp__sub]
+                                                    [vc:annotation]
+                                                    [GP_Reason:VC_OVERFLOW_CHECK]
+                                                    [comment:         Module_List(Module_List'First + Num_Modules - 1) := New_Module;                                                      ^ spacecontrolsystem.adb:86:54:VC_OVERFLOW_CHECK]
+                                                    [GP_Sloc:spacecontrolsystem.adb:86:54]
+                                                    [GP_Id:4] (Standard__integer.range_check_
+                                                                 (([sloc:spacecontrolsystem.adb:86] 
+                                                                  ([vc:annotation]
+                                                                  [GP_Reason:VC_OVERFLOW_CHECK]
+                                                                  [comment:         Module_List(Module_List'First + Num_Modules - 1) := New_Module;                                        ^ spacecontrolsystem.adb:86:40:VC_OVERFLOW_CHECK]
+                                                                  [GP_Shape:if__module_list_assign__ixdcomp__sub__add]
+                                                                  [GP_Sloc:spacecontrolsystem.adb:86:40]
+                                                                  [GP_Id:3] (
+                                                                  Standard__integer.range_check_
+                                                                    (
+                                                                    1
+                                                                    + !Spacecontrolsystem__num_modules.num_modules))))
+                                                                    - 1))))
+                                                    in assert
+                                                    { ([sloc:spacecontrolsystem.adb:86] 
+                                                      ([GP_Shape:if__module_list_assign__ixdcomp__sub]
+                                                      [vc:annotation]
+                                                      [GP_Sloc:spacecontrolsystem.adb:86:54]
+                                                      [GP_Reason:VC_INDEX_CHECK]
+                                                      [comment:         Module_List(Module_List'First + Num_Modules - 1) := New_Module;                                                      ^ spacecontrolsystem.adb:86:54:VC_INDEX_CHECK]
+                                                      [GP_Id:5] ((Spacecontrolsystem__Tmodule_arrayD1.first
+                                                                    <= ([mlw:proxy_symbol]
+                                                                    [introduced] temp___273))
+                                                                   /\
+                                                                   (([mlw:proxy_symbol]
+                                                                    [introduced] temp___273)
+                                                                    <= Spacecontrolsystem__Tmodule_arrayD1.last)))) };
+                                                    ([mlw:proxy_symbol]
+                                                    [introduced] temp___273))
+                                                    ( Spacecontrolsystem__add_module_to_station__new_module.new_module)))))
+                                                  else
+                                                 ();
+                                                 ([GP_Sloc:spacecontrolsystem.adb:89:19] 
+                                                 ([sloc:spacecontrolsystem.adb:89] ()));
+                                                 ([GP_Sloc:spacecontrolsystem.adb:89:37] 
+                                                 ([sloc:spacecontrolsystem.adb:89] (let ([mlw:proxy_symbol]
+                                                 [introduced] temp___274) = 
+                                                 1 in
+                                                 (let ([mlw:proxy_symbol]
+                                                 [introduced] temp___275) =
+                                                 100 in (
+                                                 Spacecontrolsystem__add_module_to_station__L_1__i.i
+                                                 :=
+                                                 ([mlw:proxy_symbol]
+                                                   [introduced] temp___274));
+                                                 (* Translation of an Ada loop from spacecontrolsystem.adb:89 *);
+                                                 (if
+                                                 (_gnatprove_standard.Boolean.andb
+                                                    (([mlw:proxy_symbol]
+                                                       [introduced] temp___274)
+                                                       <= !Spacecontrolsystem__add_module_to_station__L_1__i.i)
+                                                    (!Spacecontrolsystem__add_module_to_station__L_1__i.i
+                                                       <= ([mlw:proxy_symbol]
+                                                       [introduced] temp___275)))
+                                                 then
+                                                 (try
+                                                 (let temp___loop_entry_278 =
+                                                   !Spacecontrolsystem__module_list.module_list
+                                                   in
+                                                   (* While loop translating the Ada loop from spacecontrolsystem.adb:89 *);
+                                                   ([sloc:spacecontrolsystem.adb:89] 
+                                                   loop
+                                                     (* Check for absence of RTE in the loop invariant and variant *)
+                                                     
+                                                     
+                                                     (* Assume implicit invariants from the loop spacecontrolsystem.adb:89 *);
+                                                     assume
+                                                     { (_gnatprove_standard.Boolean.andb
+                                                          (True /\
+                                                             (Spacecontrolsystem__module_array___axiom.dynamic_invariant
+                                                                !Spacecontrolsystem__module_list.module_list
+                                                                True True
+                                                                True True) /\
+                                                             True /\
+                                                             --pp_universal_quantif NOT IMPLEMENTED)
+                                                          ((1
+                                                              <= !Spacecontrolsystem__add_module_to_station__L_1__i.i)
+                                                             /\
+                                                             (!Spacecontrolsystem__add_module_to_station__L_1__i.i
+                                                                <= 100))) };
+                                                     (* Continuation of loop after loop invariant and variant *);
+                                                     ();
+                                                     ([GP_Sloc:spacecontrolsystem.adb:90:13] 
+                                                     ([sloc:spacecontrolsystem.adb:90] ()));
+                                                     ([GP_Sloc:spacecontrolsystem.adb:90:31] 
+                                                     ([sloc:spacecontrolsystem.adb:90] ()));
+                                                     ([GP_Sloc:spacecontrolsystem.adb:90:28] 
+                                                     ([sloc:spacecontrolsystem.adb:90] (
+                                                     Spacecontrolsystem__module_list.module_list
+                                                     :=
+                                                     (Array__Int__Spacecontrolsystem__module_record.set
+                                                        !Spacecontrolsystem__module_list.module_list
+                                                        !Spacecontrolsystem__add_module_to_station__L_1__i.i
+                                                        ( (Array__Int__Spacecontrolsystem__module_record.get
+                                                             !Spacecontrolsystem__module_list.module_list
+                                                             (let ([mlw:proxy_symbol]
+                                                             [introduced] temp___277)
+                                                             =
+                                                             (!Spacecontrolsystem__add_module_to_station__L_1__i.i
+                                                                + 1) in
+                                                             assert
+                                                             { ([sloc:spacecontrolsystem.adb:90] 
+                                                               ([GP_Shape:if__L_1_while__module_list_assign__ixdcomp__add]
+                                                               [comment:            Module_List(i) := Module_List(i + 1);                                             ^ spacecontrolsystem.adb:90:45:VC_INDEX_CHECK]
+                                                               [vc:annotation]
+                                                               [GP_Sloc:spacecontrolsystem.adb:90:45]
+                                                               [GP_Reason:VC_INDEX_CHECK]
+                                                               [GP_Id:6] (
+                                                               (Spacecontrolsystem__Tmodule_arrayD1.first
+                                                                  <= ([mlw:proxy_symbol]
+                                                                  [introduced] temp___277))
+                                                                 /\
+                                                                 (([mlw:proxy_symbol]
+                                                                    [introduced] temp___277)
+                                                                    <= Spacecontrolsystem__Tmodule_arrayD1.last)))) };
+                                                             ([mlw:proxy_symbol]
+                                                             [introduced] temp___277))))))));
+                                                     (* Check for the exit condition and loop statements appearing before the loop invariant of loop spacecontrolsystem.adb:89 *);
+                                                     (if
+                                                     (!Spacecontrolsystem__add_module_to_station__L_1__i.i
+                                                        = ([mlw:proxy_symbol]
+                                                        [introduced] temp___275))
+                                                     then
+                                                     raise Spacecontrolsystem__add_module_to_station__L_1.L_1
+                                                     );
+                                                     ([sloc:spacecontrolsystem.adb:89] (
+                                                     Spacecontrolsystem__add_module_to_station__L_1__i.i
+                                                     :=
+                                                     (!Spacecontrolsystem__add_module_to_station__L_1__i.i
+                                                        + 1)))
+                                                      end loop)) with
+                                                 | Spacecontrolsystem__add_module_to_station__L_1.L_1 
+                                                 -> ()) )))));
+                                                 ([GP_Sloc:spacecontrolsystem.adb:92:10] 
+                                                 ([sloc:spacecontrolsystem.adb:92] ()));
+                                                 ([GP_Sloc:spacecontrolsystem.adb:92:22] 
+                                                 ([sloc:spacecontrolsystem.adb:92] ()));
+                                                 ([GP_Sloc:spacecontrolsystem.adb:92:40] 
+                                                 ([sloc:spacecontrolsystem.adb:92] (
+                                                 Spacecontrolsystem__module_list.module_list
+                                                 :=
+                                                 (Array__Int__Spacecontrolsystem__module_record.set
+                                                    !Spacecontrolsystem__module_list.module_list
+                                                    100
+                                                    ( Spacecontrolsystem__add_module_to_station__new_module.new_module))))))));
+          raise Return__exc with | Return__exc  -> ());
+        abstract ensures { True } begin  (let _ = True in ())  end
+
+end

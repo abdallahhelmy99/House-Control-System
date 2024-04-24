@@ -1,0 +1,1034 @@
+'2023-05-11T03:07:35.932000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine Single File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    spacecontrolsystem.adb:87:37: error: "Get_Line" is not allowed in SPARK
+
+    spacecontrolsystem.adb:87:37: error: violation of aspect SPARK_Mode at line 4
+
+    spacecontrolsystem.adb:92:36: error: "Get_Line" is not allowed in SPARK
+
+    spacecontrolsystem.adb:92:36: error: violation of aspect SPARK_Mode at line 4
+
+    spacecontrolsystem.adb:97:39: error: "Get_Line" is not allowed in SPARK
+
+    spacecontrolsystem.adb:97:39: error: violation of aspect SPARK_Mode at line 4
+
+    gnatprove: error during analysis of data and information flow
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:07:35.932000'
+'2023-05-11T03:08:20.739000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine Subprogram
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    spacecontrolsystem.adb:87:37: error: "Get_Line" is not allowed in SPARK
+
+    spacecontrolsystem.adb:87:37: error: violation of aspect SPARK_Mode at line 4
+
+    spacecontrolsystem.adb:92:36: error: "Get_Line" is not allowed in SPARK
+
+    spacecontrolsystem.adb:92:36: error: violation of aspect SPARK_Mode at line 4
+
+    spacecontrolsystem.adb:97:39: error: "Get_Line" is not allowed in SPARK
+
+    spacecontrolsystem.adb:97:39: error: violation of aspect SPARK_Mode at line 4
+
+    gnatprove: error during analysis of data and information flow
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:08:20.739000'
+'2023-05-11T03:08:37.854000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove Selected Region
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:87:37: error: "Get_Line" is not allowed in SPARK
+
+    spacecontrolsystem.adb:87:37: error: violation of aspect SPARK_Mode at line 4
+
+    spacecontrolsystem.adb:92:36: error: "Get_Line" is not allowed in SPARK
+
+    spacecontrolsystem.adb:92:36: error: violation of aspect SPARK_Mode at line 4
+
+    spacecontrolsystem.adb:97:39: error: "Get_Line" is not allowed in SPARK
+
+    spacecontrolsystem.adb:97:39: error: violation of aspect SPARK_Mode at line 4
+
+    gnatprove: error during flow analysis and proof
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:08:37.854000'
+'2023-05-11T03:19:38.156000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine Single File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:19:38.156000'
+'2023-05-11T03:20:10.193000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine Subprogram
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:20:10.193000'
+'2023-05-11T03:20:22.222000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:80:22: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    spacecontrolsystem.adb:84:45: medium: array index check might fail [reason for
+    check: result of addition must be a valid index into the array][#1]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:20:22.222000'
+'2023-05-11T03:22:35.025000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:80:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    spacecontrolsystem.adb:84:44: medium: array index check might fail [reason for
+    check: value must be a valid index into the array][#1]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:22:35.025000'
+'2023-05-11T03:23:32.046000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:80:22: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:23:32.046000'
+'2023-05-11T03:24:39.121000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:80:22: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:24:39.121000'
+'2023-05-11T03:25:33.022000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine Single File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:25:33.022000'
+'2023-05-11T03:25:40.125000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine Subprogram
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:25:40.125000'
+'2023-05-11T03:25:47.602000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:80:22: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:25:47.602000'
+'2023-05-11T03:26:52.302000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:39: error: binary operator expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:26:52.302000'
+'2023-05-11T03:27:32.119000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:34: error: binary operator expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:27:32.119000'
+'2023-05-11T03:28:02.130000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:27: error: binary operator expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:28:02.130000'
+'2023-05-11T03:28:10.209000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove Line
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:27: error: binary operator expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:28:10.209000'
+'2023-05-11T03:28:19.249000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove Line
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:27: error: binary operator expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:28:19.249000'
+'2023-05-11T03:28:36.117000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove Selected Region
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:27: error: binary operator expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:28:36.117000'
+'2023-05-11T03:28:53.877000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:27: error: binary operator expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:28:53.877000'
+'2023-05-11T03:29:32.274000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:27: error: binary operator expected
+
+    spacecontrolsystem.adb:90:01: error: duplicate end line ignored
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:29:32.274000'
+'2023-05-11T03:30:02.324000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:27: error: binary operator expected
+
+    spacecontrolsystem.adb:90:01: error: duplicate end line ignored
+
+    spacecontrolsystem.adb:92:01: error: "end Spacecontrolsystem;" expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:30:02.324000'
+'2023-05-11T03:30:26.355000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine Single File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:27: error: binary operator expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:30:26.355000'
+'2023-05-11T03:31:01.730000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:83:29: error: binary operator expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:31:01.730000'
+'2023-05-11T03:31:26.479000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:31:26.479000'
+'2023-05-11T03:31:36.501000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:80:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    spacecontrolsystem.adb:84:42: medium: array index check might fail [reason for
+    check: result of addition must be a valid index into the array][#1]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T03:31:36.501000'
+'2023-05-11T12:52:40.574000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:52:40.574000'
+'2023-05-11T12:52:55.813000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:80:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    spacecontrolsystem.adb:84:42: medium: array index check might fail [reason for
+    check: result of addition must be a valid index into the array][#1]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:52:55.813000'
+'2023-05-11T12:54:05.758000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:54:05.758000'
+'2023-05-11T12:54:12.860000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:80:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    spacecontrolsystem.adb:84:42: medium: array index check might fail [reason for
+    check: result of addition must be a valid index into the array][#1]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:54:12.860000'
+'2023-05-11T12:55:37.904000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:55:37.904000'
+'2023-05-11T12:55:49.543000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:86:22: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    spacecontrolsystem.adb:90:45: medium: array index check might fail [reason for
+    check: result of addition must be a valid index into the array][#1]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:55:49.543000'
+'2023-05-11T12:57:07.662000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:89:27: error: prefix of "Range" attribute must be a type
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:57:07.662000'
+'2023-05-11T12:57:21.919000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:89:27: error: prefix of "Range" attribute must be a type
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:57:21.919000'
+'2023-05-11T12:58:00.182000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:89:36: error: unrecognized attribute "Reverse_Range"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:58:00.182000'
+'2023-05-11T12:58:15.029000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:58:15.029000'
+'2023-05-11T12:58:22.474000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:85:37: medium: overflow check might fail [reason for check:
+    result of addition must fit in a 32-bits machine integer] [possible fix: subprogram
+    at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    spacecontrolsystem.adb:86:22: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#1]
+
+    spacecontrolsystem.adb:90:27: medium: array index check might fail [reason for
+    check: result of addition must be a valid index into the array][#2]
+
+    spacecontrolsystem.adb:92:22: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#3]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:58:22.474000'
+'2023-05-11T12:59:06.044000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:89:27: error: prefix of "Range" attribute must be a type
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:59:06.044000'
+'2023-05-11T12:59:30.411000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:89:27: error: prefix of "Range" attribute must be a type
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T12:59:30.411000'
+'2023-05-11T13:00:50.613000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:00:50.613000'
+'2023-05-11T13:00:57.385000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:85:34: medium: overflow check might fail [reason for check:
+    result of addition must fit in a 32-bits machine integer] [possible fix: subprogram
+    at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    spacecontrolsystem.adb:86:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#1]
+
+    spacecontrolsystem.adb:89:51: medium: overflow check might fail [reason for check:
+    result of subtraction must fit in a 32-bits machine integer] [possible fix: subprogram
+    at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#2]
+
+    spacecontrolsystem.adb:92:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#3]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:00:57.385000'
+'2023-05-11T13:01:20.958000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove Selected Region
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:01:20.958000'
+'2023-05-11T13:01:53.681000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove Selected Region
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:01:53.681000'
+'2023-05-11T13:02:51.332000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove Selected Region
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:85:34: medium: overflow check might fail [reason for check:
+    result of addition must fit in a 32-bits machine integer] [possible fix: subprogram
+    at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    spacecontrolsystem.adb:86:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#1]
+
+    spacecontrolsystem.adb:89:51: medium: overflow check might fail [reason for check:
+    result of subtraction must fit in a 32-bits machine integer] [possible fix: subprogram
+    at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#2]
+
+    spacecontrolsystem.adb:92:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#3]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:02:51.332000'
+'2023-05-11T13:03:54.885000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:03:54.885000'
+'2023-05-11T13:04:04.656000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:85:34: medium: overflow check might fail [reason for check:
+    result of addition must fit in a 32-bits machine integer] [possible fix: subprogram
+    at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#0]
+
+    spacecontrolsystem.adb:86:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#1]
+
+    spacecontrolsystem.adb:89:51: medium: overflow check might fail [reason for check:
+    result of subtraction must fit in a 32-bits machine integer] [possible fix: subprogram
+    at spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#2]
+
+    spacecontrolsystem.adb:92:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array] [possible fix: subprogram at
+    spacecontrolsystem.ads:51 should mention Num_Modules in a precondition][#3]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:04:04.656000'
+'2023-05-11T13:05:38.773000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:05:38.773000'
+'2023-05-11T13:05:45.664000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:86:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array][#0]
+
+    spacecontrolsystem.adb:89:51: medium: overflow check might fail [reason for check:
+    result of subtraction must fit in a 32-bits machine integer][#1]
+
+    spacecontrolsystem.adb:92:19: medium: array index check might fail [reason for
+    check: value must be a valid index into the array][#2]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:05:45.664000'
+'2023-05-11T13:06:49.294000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    spacecontrolsystem.adb:108:38: error: "No_Module" is undefined
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:06:49.294000'
+'2023-05-11T13:07:29.694000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:07:29.694000'
+'2023-05-11T13:07:35.968000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:86:22: medium: array index check might fail [reason for
+    check: value must be a valid index into the array][#0]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:07:35.968000'
+'2023-05-11T13:08:33.621000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:86:54: medium: array index check might fail [reason for
+    check: result of subtraction must be a valid index into the array][#0]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:08:33.621000'
+'2023-05-11T13:09:10.691000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:09:10.691000'
+'2023-05-11T13:09:16.421000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:86:51: medium: array index check might fail [reason for
+    check: result of subtraction must be a valid index into the array][#0]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:09:16.421000'
+'2023-05-11T13:10:50.539000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:10:50.539000'
+'2023-05-11T13:10:57.182000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spacecontrolsystem.adb:86:51: medium: array index check might fail [reason for
+    check: result of subtraction must be a valid index into the array][#0]
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:10:57.182000'
+'2023-05-11T13:11:21.797000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:11:21.797000'
+'2023-05-11T13:11:27.355000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:11:27.355000'
+'2023-05-11T13:11:34.518000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:11:34.518000'
+'2023-05-11T13:12:19.936000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove Selected Region
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:12:19.936000'
+'2023-05-11T13:12:39.955000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:12:39.955000'
+'2023-05-11T13:12:45.618000':
+  category: GNATprove
+  files:
+  - D:\New folder (3)\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in D:\New folder (3)\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2023-05-11T13:12:45.618000'

@@ -1,0 +1,421 @@
+{
+  "spark": [
+    {
+      "name": "Spacecontrolsystem",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 3
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.Open_Airlock_Door_1",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 44
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.Open_Airlock_Door_2",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 45
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.Close_Airlock_Door_1",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 46
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.Close_Airlock_Door_2",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 47
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.Adjust_Station_Distance_From_Earth",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 48
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.Both_Doors_Closed",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 49
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.Both_Doors_Open",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 50
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.Add_Module_To_Station",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 51
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.Remove_Last_Module_From_Station",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 55
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.End_EVA",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 56
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.Start_Space_Walk",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.ads",
+          "line": 58
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Spacecontrolsystem.\"and\"",
+      "sloc": [
+        {
+          "file": "spacecontrolsystem.adb",
+          "line": 132
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 506
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Start_Space_Walk",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 58
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 506
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Adjust_Station_Distance_From_Earth",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 48
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Add_Module_To_Station",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 51
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 506
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Open_Airlock_Door_1",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 44
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 506
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Open_Airlock_Door_2",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 45
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.\"and\"",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.adb",
+              "line": 132
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Both_Doors_Closed",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 49
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Remove_Last_Module_From_Station",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 55
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 506
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Close_Airlock_Door_1",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 46
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 506
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.End_EVA",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 56
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Both_Doors_Open",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 50
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 506
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Spacecontrolsystem.Close_Airlock_Door_2",
+          "sloc": [
+            {
+              "file": "spacecontrolsystem.ads",
+              "line": 47
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "globals (advanced)": 8.03740043193102E-03,
+    "flow analysis": 7.52240000292659E-03,
+    "marking": 1.57200003741309E-04,
+    "properties (advanced)": 3.65999985660892E-05,
+    "globals (basic)": 9.28690005093813E-03
+  }
+}

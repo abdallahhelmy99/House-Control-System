@@ -1,0 +1,25 @@
+# Ada Spark Project
+
+# Build artifacts
+*.ali
+*.o
+*.ali
+*.so
+*.a
+
+# Compiled executables
+*.exe
+*.app
+
+# IDE files
+.project
+.cproject
+
+# Temporary files
+*~
+
+# Logs
+*.log
+
+# Dependency directories
+.adainfo

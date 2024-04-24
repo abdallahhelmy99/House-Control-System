@@ -1,0 +1,6 @@
+spacecontrolsystem.adb:87:37: error: "Get_Line" is not allowed in SPARK
+spacecontrolsystem.adb:87:37: error: violation of aspect SPARK_Mode at line 4
+spacecontrolsystem.adb:92:36: error: "Get_Line" is not allowed in SPARK
+spacecontrolsystem.adb:92:36: error: violation of aspect SPARK_Mode at line 4
+spacecontrolsystem.adb:97:39: error: "Get_Line" is not allowed in SPARK
+spacecontrolsystem.adb:97:39: error: violation of aspect SPARK_Mode at line 4

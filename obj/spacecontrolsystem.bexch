@@ -1,0 +1,22 @@
+[MAPPING FILE]
+C:\Users\abdal\AppData\Local\Temp\GNAT-TEMP-000003.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2021
+[MAIN BASE NAME]
+spacecontrolsystem
+[COMPILER PATH]
+c:\gnat\2021\bin\gcc.exe
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+[MAIN DEPENDENCY FILE]
+D:\New folder (3)\obj\spacecontrolsystem.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=
+[PROJECT FILES]
+D:\New folder (3)\default.gpr
+20230511000528 d0d5c1ee12423c71e0f3b06557e506c1
