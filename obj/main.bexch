@@ -1,18 +1,18 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-/Users/abdallahhelmy/Downloads/FINAL copy/default.gpr
-20240424114628 83a85c4d14a9961aa021b747e16e09c4
+/Users/abdallahhelmy/Mine/Work/House-Control-System/default.gpr
+20240424114628 ba36828c94abca7424f3232e875640a3
 [BOUND OBJECT FILES]
-/Users/abdallahhelmy/Downloads/FINAL copy/obj/housecontrolsystem.o
-/Users/abdallahhelmy/Downloads/FINAL copy/obj/main.o
+/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/housecontrolsystem.o
+/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/main.o
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
--L/Users/abdallahhelmy/Downloads/FINAL copy/obj/
--L/Users/abdallahhelmy/Downloads/FINAL copy/obj/
+-L/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/
+-L/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/
 -L/applications/gnat/lib/gcc/x86_64-apple-darwin17.7.0/8.4.1/adalib/
 -static
 /applications/gnat/lib/gcc/x86_64-apple-darwin17.7.0/8.4.1/adalib/libgnat.a

@@ -1,0 +1,2374 @@
+{
+  "spark": [
+    {
+      "name": "HouseControlSystem",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Open_Fridge_Door",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 18
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Close_Fridge_Door",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 23
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Open_Oven_Door",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 28
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Close_Oven_Door",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 33
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Open_Window",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 38
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Close_Window",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 43
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Turn_Heating_On",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 48
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Turn_Heating_Off",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 53
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Check_CO_Level",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 58
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Is_Temperature_Safe",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 63
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Are_Doors_Safe",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 67
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Is_Heating_Safe",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 71
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "HouseControlSystem.Is_CO_Level_Safe",
+      "sloc": [
+        {
+          "file": "housecontrolsystem.ads",
+          "line": 75
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "housecontrolsystem.adb",
+      "line": 18,
+      "col": 7,
+      "rule": "GLOBAL_MISSING",
+      "severity": "high",
+      "entity": {
+        "name": "HouseControlSystem.Open_Oven_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 28
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 0,
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 31,
+      "col": 7,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Open_Oven_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 28
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 72,
+      "col": 9,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Is_Heating_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 71
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 73,
+      "col": 9,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Is_Heating_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 71
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.adb",
+      "line": 43,
+      "col": 7,
+      "rule": "GLOBAL_MISSING",
+      "severity": "high",
+      "entity": {
+        "name": "HouseControlSystem.Turn_Heating_Off",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 53
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 1,
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 56,
+      "col": 7,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Turn_Heating_Off",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 53
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 68,
+      "col": 9,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Are_Doors_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 67
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 69,
+      "col": 9,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Are_Doors_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 67
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.adb",
+      "line": 28,
+      "col": 7,
+      "rule": "GLOBAL_MISSING",
+      "severity": "high",
+      "entity": {
+        "name": "HouseControlSystem.Open_Window",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 2,
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 41,
+      "col": 7,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Open_Window",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.adb",
+      "line": 13,
+      "col": 7,
+      "rule": "GLOBAL_MISSING",
+      "severity": "high",
+      "entity": {
+        "name": "HouseControlSystem.Close_Fridge_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 23
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 3,
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 26,
+      "col": 7,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Close_Fridge_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 23
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 64,
+      "col": 9,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Is_Temperature_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 63
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 65,
+      "col": 9,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Is_Temperature_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 63
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.adb",
+      "line": 38,
+      "col": 7,
+      "rule": "GLOBAL_MISSING",
+      "severity": "high",
+      "entity": {
+        "name": "HouseControlSystem.Turn_Heating_On",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 48
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 4,
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 51,
+      "col": 7,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Turn_Heating_On",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 48
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.adb",
+      "line": 23,
+      "col": 7,
+      "rule": "GLOBAL_MISSING",
+      "severity": "high",
+      "entity": {
+        "name": "HouseControlSystem.Close_Oven_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 33
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 5,
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 36,
+      "col": 7,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Close_Oven_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 33
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.adb",
+      "line": 48,
+      "col": 10,
+      "rule": "GLOBAL_MISSING",
+      "severity": "high",
+      "entity": {
+        "name": "HouseControlSystem.Check_CO_Level",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 58
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 6,
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 61,
+      "col": 7,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Check_CO_Level",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 58
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.adb",
+      "line": 8,
+      "col": 7,
+      "rule": "GLOBAL_MISSING",
+      "severity": "high",
+      "entity": {
+        "name": "HouseControlSystem.Open_Fridge_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 18
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 7,
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 21,
+      "col": 7,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Open_Fridge_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 18
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.adb",
+      "line": 33,
+      "col": 7,
+      "rule": "GLOBAL_MISSING",
+      "severity": "high",
+      "entity": {
+        "name": "HouseControlSystem.Close_Window",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 43
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 8,
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 46,
+      "col": 7,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Close_Window",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 43
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 76,
+      "col": 9,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Is_CO_Level_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 77,
+      "col": 9,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Is_CO_Level_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    }
+  ],
+  "session_map": {
+    " 1": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__open_fridge_door",
+    " 2": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__close_fridge_door",
+    " 3": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__open_oven_door",
+    " 4": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__close_oven_door",
+    " 5": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__open_window",
+    " 6": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__close_window",
+    " 7": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__turn_heating_on",
+    " 8": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__turn_heating_off",
+    " 9": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__check_co_level",
+    " 10": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__is_temperature_safe",
+    " 11": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__are_doors_safe",
+    " 12": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__is_heating_safe",
+    " 13": "/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/gnatprove/housecontrolsystem__is_co_level_safe"
+  },
+  "proof": [
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 22,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Open_Fridge_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 18
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 22,
+      "check_col": 15,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 27,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Close_Fridge_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 23
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 27,
+      "check_col": 15,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 32,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Open_Oven_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 28
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 32,
+      "check_col": 15,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 37,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Close_Oven_Door",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 33
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 37,
+      "check_col": 15,
+      "session_dir": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 42,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Open_Window",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 38
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 42,
+      "check_col": 15,
+      "session_dir": 5,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 47,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Close_Window",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 43
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 47,
+      "check_col": 15,
+      "session_dir": 6,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 52,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Turn_Heating_On",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 48
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 52,
+      "check_col": 15,
+      "session_dir": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 57,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Turn_Heating_Off",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 53
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 57,
+      "check_col": 15,
+      "session_dir": 8,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 62,
+      "col": 35,
+      "rule": "VC_POSTCONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "HouseControlSystem.Check_CO_Level",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 58
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 3133,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 4290,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 62,
+      "check_col": 15,
+      "cntexmp": {
+        "housecontrolsystem.ads": {
+          "previous": {
+          },
+          "current": {
+            "17": [
+              {
+                "name": "CO_Level",
+                "value": "2.7014807E+2",
+                "kind": "variable"
+              }
+            ],
+            "62": [
+              {
+                "name": "CO_Level",
+                "value": "2.7014807E+2",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 9,
+      "session_dir": 9,
+      "how_proved": "prover"
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 66,
+      "col": 17,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Is_Temperature_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 63
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 804,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 66,
+      "check_col": 17,
+      "session_dir": 10,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 3,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 70,
+      "col": 17,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Are_Doors_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 67
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 70,
+      "check_col": 17,
+      "session_dir": 11,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 74,
+      "col": 17,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Is_Heating_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 71
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 74,
+      "check_col": 17,
+      "session_dir": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "housecontrolsystem.ads",
+      "line": 78,
+      "col": 17,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "HouseControlSystem.Is_CO_Level_Safe",
+        "sloc": [
+          {
+            "file": "housecontrolsystem.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "housecontrolsystem.ads",
+      "check_line": 78,
+      "check_col": 17,
+      "session_dir": 13,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Turn_Heating_On",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 48
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Open_Window",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 38
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Turn_Heating_On",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 48
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Open_Oven_Door",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 28
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Open_Window",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 38
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Open_Fridge_Door",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 18
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Open_Oven_Door",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 28
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Open_Fridge_Door",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 18
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Is_Heating_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 71
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "HouseControlSystem.Is_Heating_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 71
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Is_Heating_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 71
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Turn_Heating_Off",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 53
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Close_Window",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 43
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Turn_Heating_Off",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 53
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Close_Oven_Door",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 33
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Close_Window",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 43
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Close_Fridge_Door",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Close_Oven_Door",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 33
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Close_Fridge_Door",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 23
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Is_Temperature_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 63
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "HouseControlSystem.Is_Temperature_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 63
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Is_CO_Level_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Is_Temperature_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 63
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "HouseControlSystem.Is_CO_Level_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Is_CO_Level_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "HouseControlSystem.Are_Doors_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 67
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "HouseControlSystem.Are_Doors_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 67
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem.Are_Doors_Safe",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 67
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "HouseControlSystem",
+          "sloc": [
+            {
+              "file": "housecontrolsystem.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "gnatwhy3.transformations.inline_trivial": 1.26799996942282E-02,
+    "codepeer results": 1.38699996750802E-03,
+    "init_why_sections": 4.19999996665865E-04,
+    "gnatwhy3.transformations.detect_polymorphism": 3.56000004103407E-04,
+    "globals/properties (advanced)": 4.76300017908216E-03,
+    "gnatwhy3.transformations.eliminate_literal": 3.31600010395050E-03,
+    "gnatwhy3.run_vcs": 2.03207999467850E-01,
+    "gnatwhy3.transformations.eliminate_algebraic_if_poly": 2.96399998478591E-03,
+    "gnatwhy3.transformations.eliminate_definition_if_poly": 3.24300001375377E-03,
+    "flow analysis": 1.12490002065897E-02,
+    "gnatwhy3.transformations.simplify_formula": 3.53999994695187E-03,
+    "marking": 6.16100011393428E-03,
+    "translation of standard": 4.16299980133772E-03,
+    "gnatwhy3.register_vcs": 5.71699999272823E-03,
+    "gnatwhy3.transformations.eliminate_epsilon": 3.11399996280670E-03,
+    "globals (basic)": 2.92999995872378E-03,
+    "gnatwhy3.schedule_vcs": 3.26699996367097E-03,
+    "gnatwhy3.transformations.prepare_for_counterexmp": 6.33700005710125E-03,
+    "gnatwhy3.save_session": 1.39159997925162E-02,
+    "gnatwhy3.transformations.eliminate_inductive": 2.73000006563962E-03,
+    "gnatwhy3.transformations.encoding_smt_if_poly": 9.99999997475243E-07,
+    "gnatwhy3.transformations.eliminate_builtin": 4.50999988242984E-03,
+    "gnatwhy3.transformations.discriminate_if_poly": 3.00000010611257E-06,
+    "gnatwhy3.init": 1.81818199157715E+00
+  }
+}

@@ -215,10 +215,10 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /Users/abdallahhelmy/Downloads/FINAL copy/obj/housecontrolsystem.o
-   --   /Users/abdallahhelmy/Downloads/FINAL copy/obj/main.o
-   --   -L/Users/abdallahhelmy/Downloads/FINAL copy/obj/
-   --   -L/Users/abdallahhelmy/Downloads/FINAL copy/obj/
+   --   /Users/abdallahhelmy/Mine/Work/House-Control-System/obj/housecontrolsystem.o
+   --   /Users/abdallahhelmy/Mine/Work/House-Control-System/obj/main.o
+   --   -L/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/
+   --   -L/Users/abdallahhelmy/Mine/Work/House-Control-System/obj/
    --   -L/applications/gnat/lib/gcc/x86_64-apple-darwin17.7.0/8.4.1/adalib/
    --   -static
    --   -lgnat

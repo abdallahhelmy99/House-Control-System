@@ -4,68 +4,44 @@ package body HouseControlSystem with SPARK_Mode is
 
    procedure Open_Fridge_Door is
    begin
-      if Oven = Closed then
-         Fridge := Open;
-         Put_Line("Fridge door has been opened.");
-      else
-         Put_Line("Cannot open fridge door while oven door is open.");
-      end if;
+      Fridge := Open;
+      Put_Line("Fridge door has been opened.");
    end Open_Fridge_Door;
-
    procedure Close_Fridge_Door is
    begin
       Fridge := Closed;
       Put_Line("Fridge door has been closed.");
    end Close_Fridge_Door;
-
    procedure Open_Oven_Door is
    begin
-      if Fridge = Closed then
-         Oven := Open;
-         Put_Line("Oven door has been opened.");
-      else
-         Put_Line("Cannot open oven door while fridge door is open.");
-      end if;
+      Oven := Open;
+      Put_Line("Oven door has been opened.");
    end Open_Oven_Door;
-
    procedure Close_Oven_Door is
    begin
       Oven := Closed;
       Put_Line("Oven door has been closed.");
    end Close_Oven_Door;
-
    procedure Open_Window is
    begin
-      if Heating = Off then
-         Window := Open;
-         Put_Line("Window has been opened.");
-      else
-         Put_Line("Cannot open window while heating is on.");
-      end if;
+      Window := Open;
+      Put_Line("Window has been opened.");
    end Open_Window;
-
    procedure Close_Window is
    begin
       Window := Closed;
       Put_Line("Window has been closed.");
    end Close_Window;
-
    procedure Turn_Heating_On is
    begin
-      if Window = Closed then
-         Heating := On;
-         Put_Line("Heating has been turned on.");
-      else
-         Put_Line("Cannot turn heating on while window is open.");
-      end if;
+      Heating := On;
+      Put_Line("Heating has been turned on.");
    end Turn_Heating_On;
-
    procedure Turn_Heating_Off is
    begin
       Heating := Off;
       Put_Line("Heating has been turned off.");
    end Turn_Heating_Off;
-
    procedure Check_CO_Level is
    begin
       if CO_Level <= Safe_CO_Level then

@@ -1,28 +1,43 @@
 Summary of SPARK analysis
 =========================
 
--------------------------------------------------------------------------------------------
-SPARK Analysis results        Total      Flow   CodePeer     Provers   Justified   Unproved
--------------------------------------------------------------------------------------------
-Data Dependencies                 .         .          .           .           .          .
-Flow Dependencies                 .         .          .           .           .          .
-Initialization                    .         .          .           .           .          .
-Non-Aliasing                      .         .          .           .           .          .
-Run-time Checks                   4         .          .    4 (CVC4)           .          .
-Assertions                        .         .          .           .           .          .
-Functional Contracts              .         .          .           .           .          .
-LSP Verification                  .         .          .           .           .          .
-Termination                       .         .          .           .           .          .
-Concurrency                       .         .          .           .           .          .
--------------------------------------------------------------------------------------------
-Total                             4         .          .    4 (100%)           .          .
+-----------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   CodePeer      Provers   Justified    Unproved
+-----------------------------------------------------------------------------------------------
+Data Dependencies                13           4          .            .           .           9
+Flow Dependencies                13          13          .            .           .           .
+Initialization                    .           .          .            .           .           .
+Non-Aliasing                      .           .          .            .           .           .
+Run-time Checks                   4           .          .     4 (CVC4)           .           .
+Assertions                        .           .          .            .           .           .
+Functional Contracts             13           .          .    12 (CVC4)           .           1
+LSP Verification                  .           .          .            .           .           .
+Termination                       .           .          .            .           .           .
+Concurrency                       .           .          .            .           .           .
+-----------------------------------------------------------------------------------------------
+Total                            43    17 (40%)          .     16 (37%)           .    10 (23%)
 
 
 max steps used for successful proof: 1
 
-Analyzed 2 units
+Analyzed 3 units
+in unit housecontrolsystem, 14 subprograms and packages out of 14 analyzed
+  HouseControlSystem at housecontrolsystem.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  HouseControlSystem.Are_Doors_Safe at housecontrolsystem.ads:67 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Check_CO_Level at housecontrolsystem.ads:58 flow analyzed (0 errors, 1 checks and 0 warnings) and not proved, 0 checks out of 1 proved
+  HouseControlSystem.Close_Fridge_Door at housecontrolsystem.ads:23 flow analyzed (0 errors, 1 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Close_Oven_Door at housecontrolsystem.ads:33 flow analyzed (0 errors, 1 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Close_Window at housecontrolsystem.ads:43 flow analyzed (0 errors, 1 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Is_CO_Level_Safe at housecontrolsystem.ads:75 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Is_Heating_Safe at housecontrolsystem.ads:71 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Is_Temperature_Safe at housecontrolsystem.ads:63 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Open_Fridge_Door at housecontrolsystem.ads:18 flow analyzed (0 errors, 1 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Open_Oven_Door at housecontrolsystem.ads:28 flow analyzed (0 errors, 1 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Open_Window at housecontrolsystem.ads:38 flow analyzed (0 errors, 1 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Turn_Heating_Off at housecontrolsystem.ads:53 flow analyzed (0 errors, 1 checks and 0 warnings) and proved (1 checks)
+  HouseControlSystem.Turn_Heating_On at housecontrolsystem.ads:48 flow analyzed (0 errors, 1 checks and 0 warnings) and proved (1 checks)
 in unit main, 0 subprograms and packages out of 1 analyzed
-  Main at main.adb:7 skipped
+  Main at main.adb:5 skipped
 in unit spacecontrolsystem, 14 subprograms and packages out of 14 analyzed
   Spacecontrolsystem at spacecontrolsystem.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Spacecontrolsystem."and" at spacecontrolsystem.adb:143 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
