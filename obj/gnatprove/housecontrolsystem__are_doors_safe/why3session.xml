@@ -3,11 +3,12 @@
 "http://why3.lri.fr/why3session.dtd">
 <why3session shape_version="6">
 <prover id="0" name="CVC4" version="1.6-gnatprove" timelimit="1" steplimit="0" memlimit="1000"/>
-<file format="gnat-json" proved="true">
+<prover id="1" name="CVC4_CE" version="1.6-gnatprove" timelimit="1" steplimit="0" memlimit="1000"/>
+<file format="gnat-json">
 <path name=".."/><path name="housecontrolsystem__are_doors_safe.gnat-json"/>
-<theory name="Housecontrolsystem__are_doors_safe__subprogram_def" proved="true">
- <goal name="def&#39;vc" expl="VC for def" proved="true">
- <transf name="split_goal_wp_conj" proved="true" >
+<theory name="Housecontrolsystem__are_doors_safe__subprogram_def">
+ <goal name="def&#39;vc" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
   <goal name="def&#39;vc.0" expl="postcondition" proved="true">
   <transf name="trivial_true" proved="true" >
   </transf>
@@ -19,8 +20,9 @@
   <goal name="def&#39;vc.2" expl="postcondition" proved="true">
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
-  <goal name="def&#39;vc.3" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <goal name="def&#39;vc.3" expl="postcondition">
+  <proof prover="0"><result status="unknown" steps="35"/></proof>
+  <proof prover="1"><result status="unknown" steps="43"/></proof>
   </goal>
  </transf>
  </goal>

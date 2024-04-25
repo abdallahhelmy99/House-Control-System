@@ -20,12 +20,12 @@
   "assumptions": [
   ],
   "timings": {
-    "codepeer results": 2.51999997999519E-04,
-    "init_why_sections": 1.10700004734099E-03,
-    "globals/properties (advanced)": 7.27100018411875E-03,
-    "flow analysis": 1.06499996036291E-03,
-    "marking": 5.48199983313680E-03,
-    "translation of standard": 7.38599989563227E-03,
-    "globals (basic)": 1.31459999829531E-02
+    "codepeer results": 1.86000004759990E-04,
+    "init_why_sections": 1.09300005715340E-03,
+    "globals/properties (advanced)": 7.77800008654594E-03,
+    "flow analysis": 1.08199997339398E-03,
+    "marking": 5.63699984923005E-03,
+    "translation of standard": 8.20400007069111E-03,
+    "globals (basic)": 1.26520004123449E-02
   }
 }

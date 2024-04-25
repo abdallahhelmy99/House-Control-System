@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#f0df46c2#;
+   u00001 : constant Version_32 := 16#3bfc662b#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#67c8d842#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -241,30 +241,34 @@ package ada_main is
    pragma Export (C, u00101, "system__exn_llfS");
    u00102 : constant Version_32 := 16#502e73ef#;
    pragma Export (C, u00102, "system__fat_fltS");
-   u00103 : constant Version_32 := 16#49919c29#;
+   u00103 : constant Version_32 := 16#2179ee3e#;
    pragma Export (C, u00103, "housecontrolsystemB");
-   u00104 : constant Version_32 := 16#e3c51e7b#;
+   u00104 : constant Version_32 := 16#d3412215#;
    pragma Export (C, u00104, "housecontrolsystemS");
-   u00105 : constant Version_32 := 16#fd83e873#;
-   pragma Export (C, u00105, "system__concat_2B");
-   u00106 : constant Version_32 := 16#0afbb82b#;
-   pragma Export (C, u00106, "system__concat_2S");
-   u00107 : constant Version_32 := 16#b31a5821#;
-   pragma Export (C, u00107, "system__img_enum_newB");
-   u00108 : constant Version_32 := 16#6917693b#;
-   pragma Export (C, u00108, "system__img_enum_newS");
-   u00109 : constant Version_32 := 16#65de8d35#;
-   pragma Export (C, u00109, "system__val_intB");
-   u00110 : constant Version_32 := 16#bda40698#;
-   pragma Export (C, u00110, "system__val_intS");
-   u00111 : constant Version_32 := 16#5276dcb7#;
-   pragma Export (C, u00111, "system__val_unsB");
-   u00112 : constant Version_32 := 16#63926050#;
-   pragma Export (C, u00112, "system__val_unsS");
-   u00113 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00113, "system__memoryB");
-   u00114 : constant Version_32 := 16#512609cf#;
-   pragma Export (C, u00114, "system__memoryS");
+   u00105 : constant Version_32 := 16#2b70b149#;
+   pragma Export (C, u00105, "system__concat_3B");
+   u00106 : constant Version_32 := 16#032b335e#;
+   pragma Export (C, u00106, "system__concat_3S");
+   u00107 : constant Version_32 := 16#fd83e873#;
+   pragma Export (C, u00107, "system__concat_2B");
+   u00108 : constant Version_32 := 16#0afbb82b#;
+   pragma Export (C, u00108, "system__concat_2S");
+   u00109 : constant Version_32 := 16#b31a5821#;
+   pragma Export (C, u00109, "system__img_enum_newB");
+   u00110 : constant Version_32 := 16#6917693b#;
+   pragma Export (C, u00110, "system__img_enum_newS");
+   u00111 : constant Version_32 := 16#65de8d35#;
+   pragma Export (C, u00111, "system__val_intB");
+   u00112 : constant Version_32 := 16#bda40698#;
+   pragma Export (C, u00112, "system__val_intS");
+   u00113 : constant Version_32 := 16#5276dcb7#;
+   pragma Export (C, u00113, "system__val_unsB");
+   u00114 : constant Version_32 := 16#63926050#;
+   pragma Export (C, u00114, "system__val_unsS");
+   u00115 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00115, "system__memoryB");
+   u00116 : constant Version_32 := 16#512609cf#;
+   pragma Export (C, u00116, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -309,6 +313,8 @@ package ada_main is
    --  system.wch_cnv%b
    --  system.concat_2%s
    --  system.concat_2%b
+   --  system.concat_3%s
+   --  system.concat_3%b
    --  system.traceback%s
    --  system.traceback%b
    --  system.secondary_stack%s
